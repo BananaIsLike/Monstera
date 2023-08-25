@@ -1,0 +1,14 @@
+// sass ./scss/news/news.scss ./css/news-style.css --watch
+
+@import "variables";
+@import "reset";
+@import "global";
+@import "header";
+@import "feature-form";
+
+@import "header-main";
+@import "anker";
+@import "campains-business";
+
+
+@import "footer";

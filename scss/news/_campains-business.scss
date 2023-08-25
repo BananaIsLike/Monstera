@@ -1,0 +1,57 @@
+.campains, .business{
+    margin-top: 40px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    &-wrap{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 100px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    &-item{
+        min-width: calc(50% - 10px);
+        padding: 12px;
+        display: flex;
+        border-radius: 20px;
+        border: 1px solid $border-color;
+        background-color: #fff;
+        &:hover{
+            .campains-img img,
+            .business-img img{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-img{
+        min-width: 156px;
+        height: 156px;
+        object-fit: cover;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-right: 16px;
+        img{
+            transition: .2s;
+        }
+    }
+    &-time{
+        color: #797978;
+        font-size: 12px;
+    }
+    &-title{
+        margin: 4px 0 7px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &-desc{
+        font-size: 15px;
+        max-width: 280px;
+    }
+    &-main-title{
+        margin-bottom: 60px;
+    }
+    // &-btn{
+    //     // margin-bottom: 40px;
+    // }
+}

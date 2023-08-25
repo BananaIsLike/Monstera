@@ -1,0 +1,211 @@
+.global-main{
+    padding: 30px 35px;
+    background: rgba(255,255,255);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.01);
+    // transform: translate(-50%,-50%);
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    border-radius: 20px;
+    transition: .4s;
+    z-index: 10000;
+
+}
+.header-dark-active{
+    opacity: 1;
+    z-index: 500;
+}
+.login-active{
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+}
+.global-main--login{
+    // display: none;
+}
+.global-login--comp{
+    // display: none;
+}
+.update{
+    // display: none;
+}
+.login{
+    &-logo{
+        width: 125px;
+        height: 120px;
+        margin: 0 auto;
+    }
+    &-title{
+        color: $light-green;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &-sub{
+        color: $dark-green;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &-form{
+        padding: 15px 10px;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        width: 370px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    &-label{
+        font-size: 16px;
+        font-weight: 600;
+        width: 80px;
+    }
+    &-input{
+        border: none;
+        width: 240px;
+        &::placeholder{
+            color: rgba(0, 0, 0, 0.25);
+        }
+        &:focus{
+            color: $dark-gray;
+        }
+    }
+    &-forget,
+    &-new {
+        font-size: 14px;
+        font-weight: 500;
+        color: $light-green;
+        text-align: center;
+    }
+    &-line{
+        width: 80%;
+        height: 1px;
+        background-color: $border-color;
+        margin: 10px auto 15px;
+    }
+    &-diff{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        margin-bottom: 20px;
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        span{
+            color: $light-green;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1.7px;
+        }
+    }
+    &-sns-wrap{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &-sns{
+        transform: scale(0.9);
+        &:first-child{
+            margin-left: 2px;
+        }
+        &:last-child{
+            margin-top: -3px;
+            margin-left: -3px;
+        }
+    }
+    &-btn{
+        width: 100%;
+        display: block;
+        margin-top: 5px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    
+}
+.comp{
+    &-title{
+        font-family: $secondary-font;
+        font-size: 50px;
+        text-align: center;
+    }
+    &-logo{
+        width: 125px;
+        height: 120px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    &-check{
+        display: inline-block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    &-sub{
+        font-size: 20px;
+        font-weight: 600;
+        color: $light-green;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &-btn{
+          margin: 0 auto; 
+          font-size: 16px;
+          font-weight: 500;
+    }
+}
+.update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-loader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        margin-top: 15px;
+    }
+    &-item{
+        width: 15px;
+        height: 15px;
+        background-color: $light-green;
+        display: flex;
+        border-radius: 50%;
+        &1{
+            animation: loader .5s infinite linear alternate;
+        }
+        &2{
+            animation: loader .5s infinite linear alternate .25s;
+        }
+        &3{
+            animation: loader .5s infinite linear alternate .55s;
+        }
+    }
+    &-text{
+        color: $dark-gray;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    &-sub{
+        color: $dark-gray;
+        font-weight: 500;
+        font-size: 25px;
+    }
+}
+@keyframes loader{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-200%);
+    }
+}

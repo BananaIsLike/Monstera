@@ -1,0 +1,77 @@
+.best{
+    margin: 180px 0 90px;
+    background: url('../images/home/best-bg.jpg'), rgba(0,0,0,0.25);
+    width: 100%;
+    height: 425px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:hover{
+        .best-cup{
+            transform: scale(1.05)
+            rotate(5deg);
+            
+        }
+        .best-fruit{
+            transform: scale(1.15) rotate(0deg);
+        }
+    }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-content{
+        margin-top: 50px;
+    }
+    &-content-top{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    &-medal{
+        transform: rotate(20deg);
+        margin-top: -15px;
+    }
+    &-title{
+        color: #FFF;
+        font-family: "Cherry Bomb One";
+        font-size: 70px;
+        letter-spacing: 7px;
+    }
+    &-desc{
+        width: 706px;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        margin-bottom: 30px;
+    }
+    &-btn{
+        margin-left: 0;
+    }
+    &-img{
+        position: relative;
+        margin-top: -60px;
+        width: 100%;
+        height: 100%;
+    }
+    &-cup{
+        position: absolute;
+        z-index: 100;
+        top: -25px;
+        right: -40px;
+        transition: .5s;
+        transform: scale(0.8);
+    }
+    &-fruit{
+        position: absolute;
+        top: -20px;
+        right: -8px;
+        z-index: 0;
+        transform: scale(0.5) rotate(-45deg);
+        transition: .5s ease-out;
+    }
+}

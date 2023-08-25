@@ -1,0 +1,33 @@
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 40px;
+    &-content{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &-title{
+        color: $light-green;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &-list{
+        display: flex;
+        gap: 20px;
+        li{
+            padding: 8px 30px;
+            border-radius: 100px;
+            background: $background-gray;
+            &:hover{
+                background: $light-gray;
+            }
+        }
+    }
+    &-item{
+        font-weight: 600;
+        color: #000;
+    }
+}

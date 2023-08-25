@@ -1,0 +1,13 @@
+// sass ./scss/shop/shop.scss ./css/shop-style.css --watch
+
+@import "variables";
+@import "reset";
+@import "global";
+
+@import "feature-form";
+@import "header";
+@import "category";
+@import "fashion-product-plant";
+
+
+@import "footer";

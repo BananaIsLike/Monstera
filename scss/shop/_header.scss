@@ -1,0 +1,348 @@
+.header-dark{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.5);
+    opacity: 0;
+    z-index: -100;
+    transition: .5s;
+}
+
+// header top bar 
+
+.header{
+    width: 100vw;
+    height: 65px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid $light-gray;
+    &-top{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+    .logo-box{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #000;
+        font-family: $secondary-font;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        &-wrap{
+            display: block;
+        }
+    }
+    &-future{
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+    &-user{
+        position: relative;
+    }
+    &-user:hover{
+        .header-dropdown{
+            display: block;
+        }
+    }
+    &-dropdown{
+        display: none;
+        position: absolute;
+        background-color: rgba(255,255,255, 0.5);
+        border: 1px solid $light-gray;
+        padding: 10px 20px 0px 20px;
+        right: 0;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 20px;
+        text-align: center;
+        color: $dark-gray;
+        font-weight: 500;
+        line-height: normal;
+        white-space: nowrap;
+        &::before{
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 15px solid rgba(255,255,255, 0.5);
+            position: absolute;
+            right: 7px;
+            top: 0;
+            transform: translateY(-100%);
+        }
+        &-item{
+            margin-bottom: 10px;
+            cursor: pointer;
+            position: relative;
+            color: $dark-gray;
+            &:first-child{
+                &::before{
+                    content: "";
+                    width: 130%;
+                    height: 95%;
+                    position: absolute;
+                    background-color: transparent;
+                    left: 0;
+                    transform: translateY(-150%);
+                }
+            }
+            &:hover{
+                color: $light-green;
+            }
+        }
+    }
+    &-search{
+        position: relative;
+        &:hover{
+            .header-search-drop{
+                display: block;
+            }
+        }
+        &-drop{
+            margin-top: 12px;
+            position: absolute;
+            display: none;
+            right: 0;
+            padding: 0 0 50px 50px;
+            &::before{
+                content: "";
+                width: 60%;
+                height: 50%;
+                right: 0;
+                background-color: #fff;
+                position: absolute;
+                transform: translateY(-100%);
+                background-color: transparent;
+            }
+        }
+        &-wrap{
+            display: flex;
+            border-radius: 5px;
+            background-color: rgba(255,255,255, 0.75);
+            border: 1px solid $dark-gray;
+        }
+        &-input{
+            border-radius: 5px 0 0 5px;
+            border: none;
+            border-right: 0px;
+            padding: 0 10px 0 15px;
+            &::placeholder{
+                font-size: 12px;
+            }
+            &:focus{
+                color: $dark-gray;
+            }
+        }
+        &-btn{
+            font-size: 16px;
+            padding: 5px 10px;
+            border-radius: 0 5px 5px 0;
+        }
+    }
+    .sns-list{
+        margin-top: 40px;
+    }
+}
+.menu{
+    &-list{
+        margin-left: 40px;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    &-item a{
+        color: $light-green;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+    }
+}
+.menu-list li{
+    position: relative;
+    &::before{
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: $light-green;
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .2s;
+    }
+    &:hover::before{
+        width: 80%;
+    }
+}
+
+// header img container 
+
+.header{
+    &-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 4px;
+        grid-template-areas:
+        "item1 item1 item2 item2"        
+        "item3 item4 item4 item5"        
+        ;
+        margin-bottom: 40px;
+    }
+    &-item{
+        box-shadow: $shadow;
+        position: relative;
+        overflow: hidden;
+        &:nth-child(1) > .header-img-impo{
+            animation-delay: 0;
+        }
+        &:nth-child(2) > .header-img-impo{
+            animation-delay: .2s;
+        }
+        &:nth-child(3) > .header-img-impo{
+            animation-delay: .4s;
+        }
+        &:nth-child(4) > .header-img-impo{
+            animation-delay: .6s;
+        }
+        &:nth-child(5) > .header-img-impo{
+            animation-delay: .8s;
+        }
+    }
+    &-img-impo{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        position: absolute;
+        &1{
+            animation: subSlider1 10s linear infinite;
+        }
+        &2{
+            animation: subSlider2 10s linear infinite;
+        }
+    }
+    &-item1{
+        height: 400px;
+        grid-area: item1;
+        &-1{
+            background-image: url(../images/shop/header1-1.png);
+            background-position: center right;
+        }
+        &-2{
+            background-image: url(../images/shop/header1-2.png);
+        }
+    }
+    &-item2{
+        grid-area: item2;
+        &-1{
+            background-image: url(../images/shop/header2-1.png);
+        }
+        &-2{
+            background-image: url(../images/shop/header2-2.png);
+        }
+    }
+    &-item3{
+        grid-area: item3;
+        &-1{
+            background-image: url(../images/shop/header3-1.png);
+        }
+        &-2{
+            background-image: url(../images/shop/header3-2.png);
+        }
+    }
+    &-item4{
+        grid-area: item4;
+        &-1{
+            background-image: url(../images/shop/header4-1.png);
+        }
+        &-2{
+            background-image: url(../images/shop/header4-2.png);
+        }
+    }
+    &-item5{
+        grid-area: item5;
+        &-1{
+            background-image: url(../images/shop/header5-1.png);
+        }
+        &-2{
+            background-image: url(../images/shop/header5-2.png);
+        }
+    }
+}
+
+@keyframes subSlider1{
+    0%{
+            opacity: 0.5;
+            transform: scale(1.05005);
+    }
+    2%{
+            opacity: 1;
+    }
+    48%{
+            opacity: 1;
+    }
+    52%{
+            opacity: 0;
+            transform: scale(1.08);
+    }
+    98%{
+            opacity: 0;
+            transform: scale(1);
+    }
+    100%{
+            opacity: 0.5;
+            transform: scale(1.05005);
+    }
+}
+
+@keyframes subSlider2{
+    0%{
+            opacity: 0.5;
+            transform: scale(1.05095);
+    }
+    2%{
+            opacity: 0;
+            transform: scale(1.051);
+    }
+    48%{
+            opacity: 0;
+            transform: scale(1);
+        
+    }
+    52%{
+            opacity: 1;
+        
+    }
+    98%{
+            opacity: 1;
+        
+    }
+    100%{
+            opacity: 0.5;
+            transform: scale(1.05095);
+        
+    }
+}
+
+// header drop down effect 
+
+.header-search:hover,
+.header-cart:hover{  
+    path{
+        stroke: $light-green;
+    }
+}
+.header-user:hover{
+    path{
+        fill: $light-green;
+    }
+}
+

@@ -1,0 +1,32 @@
+.merit{
+    margin-bottom: 90px;
+}
+.merit-container{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: $shadow;
+    min-height: 150px;
+}
+.merit-item{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+.merit-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.merit-desc{
+    font-size: 14px;
+    font-weight: 300;
+    color: $dark-gray;
+}
+.merit-line{
+    height: 80px;
+    width: 3px;
+    background-color: $light-gray;
+}

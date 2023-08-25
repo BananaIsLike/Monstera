@@ -1,0 +1,28 @@
+.anker{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    &-list{
+        display: flex;
+        gap: 20px;
+    }
+    &-title{
+        color: $light-green;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    &-item{
+        font-weight: 600;
+        padding: 8px 30px;
+        border-radius: 100px;
+        background: $background-gray;
+        letter-spacing: 1.4px;
+        &:hover{
+            background: $light-gray;
+        }
+        a{
+            color: #000;
+        }
+    }   
+}

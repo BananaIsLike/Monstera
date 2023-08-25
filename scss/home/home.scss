@@ -1,0 +1,15 @@
+// sass ./scss/home/home.scss ./css/home-style.css --watch
+
+@import "variables";
+@import "reset";
+@import "global";
+
+@import "header";
+@import "feature-form";
+@import "merit";
+@import "new";
+@import "best";
+@import "shop";
+@import "campain";
+
+@import "footer";
