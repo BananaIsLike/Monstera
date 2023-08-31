@@ -17,6 +17,7 @@
     margin-bottom: 60px;
     transform: scale(1);
     align-self: stretch;
+    transition: .2s;
     &:hover{
         transform: scale(1.05);
         .new-img img{
