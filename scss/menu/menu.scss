@@ -1,4 +1,4 @@
-// sass ./scss/news/news.scss ./css/news-style.css --watch
+// sass ./scss/menu/menu.scss ./css/menu-style.css --watch
 
 @import "./../variables";
 @import "./../reset";
@@ -7,9 +7,8 @@
 @import "./../header";
 @import "./../feature-form";
 
-@import "header-main";
-@import "anker";
-@import "campains-business";
+@import "category";
+@import "fashion-product-plant";
 
 
 @import "./../footer";

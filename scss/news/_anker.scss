@@ -16,10 +16,13 @@
         font-weight: 600;
         padding: 8px 30px;
         border-radius: 100px;
-        background: $background-gray;
+        background: $light-gray;
         letter-spacing: 1.4px;
         &:hover{
-            background: $light-gray;
+            .anker-item{
+                background-color: $background-gray;
+                
+            }
         }
         a{
             color: #000;
