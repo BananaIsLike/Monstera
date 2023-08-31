@@ -163,20 +163,14 @@ body {
   z-index: 100;
 }
 .header .logo-box {
-  display: flex;
-  align-items: center;
-  gap: 20px;
   color: #FFF;
-  font-family: "Send Flowers", sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 .header-future {
   display: flex;
   align-items: center;
-  gap: 28px;
+}
+.header-future-item {
+  margin-left: 20px;
 }
 .header-bottom {
   width: 100%;
@@ -302,7 +296,9 @@ body {
 .sns-list {
   display: flex;
   align-items: center;
-  gap: 20px;
+}
+.sns-list a {
+  margin-left: 20px;
 }
 
 .menu-list {
@@ -481,6 +477,23 @@ body {
   fill: #78ffc0;
 }
 
+@media screen and (max-width: 1536px) {
+  .header {
+    height: 45vh;
+  }
+  .header-bottom-content {
+    display: none;
+  }
+  .header .sns-list {
+    margin: 0 auto;
+  }
+  .header nav {
+    display: none;
+  }
+  .header-future-item {
+    margin-left: 5px;
+  }
+}
 .global-main {
   padding: 30px 35px;
   background: rgb(255, 255, 255);
@@ -500,6 +513,7 @@ body {
 
 .header-dark-active {
   opacity: 1;
+  z-index: 500;
 }
 
 .login-active {
@@ -691,6 +705,7 @@ body {
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   min-height: 150px;
+  flex-direction: row;
 }
 
 .merit-item {
@@ -698,6 +713,7 @@ body {
   align-items: center;
   padding: 30px;
   gap: 30px;
+  flex-direction: row;
 }
 
 .merit-title {
@@ -718,6 +734,17 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 1536px) {
+  .merit-container {
+    flex-direction: column;
+  }
+  .merit-line {
+    display: none;
+  }
+  .merit-item {
+    max-width: 450px;
+  }
+}
 .new-wrap {
   display: flex;
   align-items: center;
@@ -971,8 +998,8 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
   max-width: 996px;
-  max-height: 327px;
   transition: 0.3s;
+  flex-direction: row;
 }
 .campain-item:nth-child(2) {
   flex-direction: row-reverse;
@@ -1021,6 +1048,27 @@ body {
   font-weight: 400;
 }
 
+@media screen and (max-width: 1536px) {
+  .campain-item {
+    flex-direction: column;
+  }
+  .campain-item:nth-child(2) {
+    flex-direction: column;
+    text-align: left;
+  }
+  .campain-item:nth-child(2) .campain-btn-2 {
+    margin-left: 0;
+  }
+  .campain-img {
+    height: 625px;
+  }
+  .campain-content {
+    max-width: 600px;
+  }
+  .campain button {
+    margin-top: 20px;
+  }
+}
 .footer {
   background-color: #238759;
   padding: 65px 0 25px;

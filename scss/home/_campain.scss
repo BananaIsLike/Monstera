@@ -12,8 +12,9 @@
         box-shadow: $shadow;
         overflow: hidden;
         max-width: 996px;
-        max-height: 327px;
+        // max-height: 327px;
         transition: .3s;
+        flex-direction: row;
         &:nth-child(2){
             flex-direction: row-reverse;
             text-align: right;
@@ -61,5 +62,28 @@
     &-desc{
         font-size: 16px;
         font-weight: 400;
+    }
+}
+@media screen and (max-width: 1536px){
+    .campain{
+        &-item{
+            flex-direction: column;
+            &:nth-child(2){
+                flex-direction: column;
+                text-align: left;
+                .campain-btn-2{
+                    margin-left: 0;
+                }
+            }
+        }
+        &-img{
+            height: 625px;
+        }
+        &-content{
+            max-width: 600px;
+        }
+        button{
+            margin-top: 20px;
+        }
     }
 }

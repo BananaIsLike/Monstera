@@ -8,12 +8,14 @@
     border-radius: 20px;
     box-shadow: $shadow;
     min-height: 150px;
+    flex-direction: row;
 }
 .merit-item{
     display: flex;
     align-items: center;
     padding: 30px;
     gap: 30px;
+    flex-direction: row;
 }
 .merit-title{
     font-size: 20px;
@@ -29,4 +31,17 @@
     height: 80px;
     width: 3px;
     background-color: $light-gray;
+}
+@media screen and (max-width: 1536px){
+    .merit{
+        &-container{
+            flex-direction: column;
+        }
+        &-line{
+            display: none;
+        }
+        &-item{
+            max-width: 450px;
+        }
+    }
 }
