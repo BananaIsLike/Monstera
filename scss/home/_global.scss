@@ -74,3 +74,18 @@ body{
         }
     }
 }
+@media screen and (max-width: 1536px){
+    .best{
+        display: none;
+    }
+    .new, .shop, .campain{
+        margin-bottom: 60px;
+        &:hover{
+            .main-title{
+                h2::before{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

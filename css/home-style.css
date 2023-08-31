@@ -130,6 +130,17 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 1536px) {
+  .best {
+    display: none;
+  }
+  .new, .shop, .campain {
+    margin-bottom: 60px;
+  }
+  .new:hover .main-title h2::before, .shop:hover .main-title h2::before, .campain:hover .main-title h2::before {
+    width: 100%;
+  }
+}
 .header {
   width: 100%;
   height: 100vh;
