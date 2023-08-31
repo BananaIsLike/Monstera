@@ -22,7 +22,7 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 10px;
-        margin-bottom: 22px;
+        margin-bottom: 30px;
     }
     &-feature{
         display: flex;
@@ -96,4 +96,19 @@
         color: white;
         text-align: center;
     }
+}
+@media screen and (max-width: 1536px){
+    .footer{
+        padding: 40px 25px;
+        &-subs{
+            display: none;
+        }
+        &-content{
+            margin: 0 auto;
+        }
+        &-to-top{
+            right: 20px;
+        }
+    }
+    
 }

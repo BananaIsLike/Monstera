@@ -359,12 +359,10 @@
         }
         .sns-list{
             margin: 0 auto;
-        }
-        nav{
             display: none;
         }
-        &-future-item{
-            margin-left: 5px;
+        &-future{
+            display: none;
         }
     }
 }

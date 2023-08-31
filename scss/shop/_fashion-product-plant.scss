@@ -5,14 +5,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 60px;
+        margin-left: 100px;
     }
     &-item{
         align-self: stretch;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        margin-right: 100px;
+        margin-bottom: 60px;
         &:hover{
             .fashion-img, .product-img, .plant-img{
                 img {
@@ -75,6 +77,19 @@
     &-price{
         color: $light-green;
         font-weight: 700;
-        margin-bottom: 6px;
+        margin-bottom: 10px;
+    }
+    .orange-btn{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width: 1536px){
+    .fashion, .product, .plant{
+        &-wrap{
+            margin-left: 50px;
+        }
+        &-item{
+            margin-right: 50px;
+        }
     }
 }

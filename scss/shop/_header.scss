@@ -12,7 +12,6 @@
 
 .header{
     width: 100vw;
-    height: 65px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -26,17 +25,9 @@
         z-index: 100;
     }
     .logo-box{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: #000;
-        font-family: $secondary-font;
-        font-size: 34px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
         &-wrap{
             display: block;
+            padding: 10px 0;
         }
     }
     &-future{
@@ -344,5 +335,13 @@
     path{
         fill: $light-green;
     }
+}
+@media screen and (max-width: 1536px){
+    .header{
+        &-future{
+            display: none;
+        }
+    }
+    
 }
 

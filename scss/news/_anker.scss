@@ -1,7 +1,6 @@
 .anker{
     display: flex;
     align-items: center;
-    gap: 40px;
     justify-content: center;
     &-list{
         display: flex;
@@ -11,6 +10,7 @@
         color: $light-green;
         font-size: 20px;
         font-weight: 700;
+        margin-right: 40px;
     }
     &-item{
         font-weight: 600;

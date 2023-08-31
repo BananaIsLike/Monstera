@@ -623,7 +623,6 @@ body {
 .anker {
   display: flex;
   align-items: center;
-  gap: 40px;
   justify-content: center;
 }
 .anker-list {
@@ -634,6 +633,7 @@ body {
   color: #238759;
   font-size: 20px;
   font-weight: 700;
+  margin-right: 40px;
 }
 .anker-item {
   font-weight: 600;
@@ -728,7 +728,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 .footer-feature {
   display: flex;
@@ -801,6 +801,21 @@ body {
   font-weight: 400;
   color: white;
   text-align: center;
+}
+
+@media screen and (max-width: 1536px) {
+  .footer {
+    padding: 40px 25px;
+  }
+  .footer-subs {
+    display: none;
+  }
+  .footer-content {
+    margin: 0 auto;
+  }
+  .footer-to-top {
+    right: 20px;
+  }
 }
 
 /*# sourceMappingURL=news-style.css.map */

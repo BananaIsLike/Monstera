@@ -15,7 +15,10 @@
     width: 280px;
     box-shadow: $shadow;
     margin-bottom: 60px;
+    transform: scale(1);
+    align-self: stretch;
     &:hover{
+        transform: scale(1.05);
         .new-img img{
             transform: scale(1.1);
         }
@@ -50,6 +53,14 @@
 }
 .new-content{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.new-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
 }
 .new-title{
     font-size: 18px;

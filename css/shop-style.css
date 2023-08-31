@@ -375,7 +375,6 @@ body {
 
 .header {
   width: 100vw;
-  height: 65px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -389,19 +388,9 @@ body {
   justify-content: space-between;
   z-index: 100;
 }
-.header .logo-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #000;
-  font-family: "Send Flowers", sans-serif;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 .header .logo-box-wrap {
   display: block;
+  padding: 10px 0;
 }
 .header-future {
   display: flex;
@@ -685,12 +674,16 @@ body {
   fill: #238759;
 }
 
+@media screen and (max-width: 1536px) {
+  .header-future {
+    display: none;
+  }
+}
 .category {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  gap: 40px;
 }
 .category-content {
   display: flex;
@@ -701,15 +694,16 @@ body {
   color: #238759;
   font-size: 20px;
   font-weight: 700;
+  margin-right: 40px;
 }
 .category-list {
   display: flex;
-  gap: 20px;
 }
 .category-list li {
   padding: 8px 30px;
   border-radius: 100px;
   background: #F5F5F5;
+  margin-right: 20px;
 }
 .category-list li:hover {
   background: rgba(0, 0, 0, 0.1);
@@ -727,14 +721,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
+  margin-left: 100px;
 }
 .fashion-item, .product-item, .plant-item {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-right: 100px;
+  margin-bottom: 60px;
 }
 .fashion-item:hover .fashion-img img, .fashion-item:hover .product-img img, .fashion-item:hover .plant-img img, .product-item:hover .fashion-img img, .product-item:hover .product-img img, .product-item:hover .plant-img img, .plant-item:hover .fashion-img img, .plant-item:hover .product-img img, .plant-item:hover .plant-img img {
   transform: scale(1.03);
@@ -792,9 +788,20 @@ body {
 .fashion-price, .product-price, .plant-price {
   color: #238759;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+}
+.fashion .orange-btn, .product .orange-btn, .plant .orange-btn {
+  margin-bottom: 0px;
 }
 
+@media screen and (max-width: 1536px) {
+  .fashion-wrap, .product-wrap, .plant-wrap {
+    margin-left: 50px;
+  }
+  .fashion-item, .product-item, .plant-item {
+    margin-right: 50px;
+  }
+}
 .footer {
   background-color: #238759;
   padding: 65px 0 25px;
@@ -820,7 +827,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 .footer-feature {
   display: flex;
@@ -893,6 +900,21 @@ body {
   font-weight: 400;
   color: white;
   text-align: center;
+}
+
+@media screen and (max-width: 1536px) {
+  .footer {
+    padding: 40px 25px;
+  }
+  .footer-subs {
+    display: none;
+  }
+  .footer-content {
+    margin: 0 auto;
+  }
+  .footer-to-top {
+    right: 20px;
+  }
 }
 
 /*# sourceMappingURL=shop-style.css.map */

@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    gap: 40px;
     &-content{
         display: flex;
         align-items: center;
@@ -13,14 +12,15 @@
         color: $light-green;
         font-size: 20px;
         font-weight: 700;
+        margin-right: 40px;
     }
     &-list{
         display: flex;
-        gap: 20px;
         li{
             padding: 8px 30px;
             border-radius: 100px;
             background: $background-gray;
+            margin-right: 20px;
             &:hover{
                 background: $light-gray;
             }
