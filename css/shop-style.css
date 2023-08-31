@@ -502,23 +502,23 @@ body {
   margin-left: 40px;
   display: flex;
   align-items: center;
-  gap: 32px;
 }
 .menu-item a {
-  color: #238759;
-  font-size: 16px;
+  color: #fff;
+  font-size: 18px;
   font-weight: 600;
   line-height: normal;
 }
 
 .menu-list li {
   position: relative;
+  margin-right: 32px;
 }
 .menu-list li::before {
   content: "";
   width: 0;
   height: 3px;
-  background-color: #238759;
+  background-color: #fff;
   position: absolute;
   bottom: -2px;
   left: 50%;

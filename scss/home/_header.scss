@@ -178,7 +178,6 @@
         margin-left: 40px;
         display: flex;
         align-items: center;
-        gap: 32px;
     }
     &-item a{
         color: #fff;
@@ -189,6 +188,7 @@
 }
 .menu-list li{
     position: relative;
+    margin-right: 32px;
     &::before{
         content: "";
         width: 0;

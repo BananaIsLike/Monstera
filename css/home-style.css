@@ -316,7 +316,6 @@ body {
   margin-left: 40px;
   display: flex;
   align-items: center;
-  gap: 32px;
 }
 .menu-item a {
   color: #fff;
@@ -327,6 +326,7 @@ body {
 
 .menu-list li {
   position: relative;
+  margin-right: 32px;
 }
 .menu-list li::before {
   content: "";
