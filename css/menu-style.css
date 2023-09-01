@@ -921,20 +921,23 @@ body {
   .footer-subs {
     display: none;
   }
+  .coffee:nth-child(n+2) {
+    margin-bottom: -30px;
+  }
   .coffee-content {
-    padding: 8px;
+    padding: 10px;
   }
   .coffee-item-title {
     font-size: 16px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
   .coffee-item {
-    max-width: 180px;
+    max-width: 185px;
     margin-right: 15px;
   }
   .coffee-desc {
     font-size: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     line-height: 1.4;
   }
   .coffee-price {
@@ -951,6 +954,9 @@ body {
   .coffee .orange-cart {
     display: none;
     visibility: hidden;
+  }
+  .coffee .main-title {
+    margin-bottom: 40px;
   }
 }
 
