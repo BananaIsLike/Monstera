@@ -681,34 +681,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-}
-.category-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+  margin-left: 32px;
 }
 .category-title {
+  margin-right: 32px;
   color: #238759;
   font-size: 20px;
   font-weight: 700;
-  margin-right: 40px;
+  white-space: nowrap;
 }
 .category-list {
   display: flex;
-}
-.category-list li {
-  padding: 8px 30px;
-  border-radius: 100px;
-  background: rgba(0, 0, 0, 0.2);
-  margin-right: 20px;
-}
-.category-list li:hover {
-  background: #F5F5F5;
+  align-items: center;
 }
 .category-item {
-  font-weight: 600;
+  margin-right: 32px;
+  padding: 6px 25px;
+  background-color: #F5F5F5;
+  border-radius: 100px;
   color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.category-item:nth-child(4) {
+  letter-spacing: 2px;
+}
+.category-item:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.category-item a {
+  color: black;
 }
 
 .fashion, .product, .plant {
@@ -918,14 +921,14 @@ body {
   .header-future {
     display: none;
   }
-  .category {
+  .coffee-category {
     margin-left: 20px;
   }
-  .category-title {
+  .coffee-category-title {
     margin-right: 20px;
     font-size: 16px;
   }
-  .category-item {
+  .coffee-category-item {
     margin-right: 20px;
     padding: 6px 15px;
     font-size: 14px;

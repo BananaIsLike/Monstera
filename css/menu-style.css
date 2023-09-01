@@ -110,6 +110,7 @@ body {
 .main-title h2 {
   display: inline-block;
   position: relative;
+  white-space: nowrap;
 }
 .main-title h2:before {
   content: "";
@@ -123,10 +124,12 @@ body {
   transition: 0.2s;
 }
 
-.new, .shop, .campain, .fashion, .product, .plant {
-  margin-bottom: 90px;
+.new, .shop, .campain, .fashion, .product, .plant,
+.coffee {
+  margin-bottom: 80px;
 }
-.new:hover .main-title h2::before, .shop:hover .main-title h2::before, .campain:hover .main-title h2::before, .fashion:hover .main-title h2::before, .product:hover .main-title h2::before, .plant:hover .main-title h2::before {
+.new:hover .main-title h2::before, .shop:hover .main-title h2::before, .campain:hover .main-title h2::before, .fashion:hover .main-title h2::before, .product:hover .main-title h2::before, .plant:hover .main-title h2::before,
+.coffee:hover .main-title h2::before {
   width: 100%;
 }
 
@@ -903,14 +906,14 @@ body {
   .header-future {
     display: none;
   }
-  .category {
+  .coffee-category {
     margin-left: 20px;
   }
-  .category-title {
+  .coffee-category-title {
     margin-right: 20px;
     font-size: 16px;
   }
-  .category-item {
+  .coffee-category-item {
     margin-right: 20px;
     padding: 6px 15px;
     font-size: 14px;
