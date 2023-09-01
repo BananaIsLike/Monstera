@@ -351,18 +351,3 @@
     }
 }
 
-@media screen and (max-width: 1536px){
-    .header{
-        height: 45vh;
-        &-bottom-content{
-            display: none;
-        }
-        .sns-list{
-            margin: 0 auto;
-            display: none;
-        }
-        &-future{
-            display: none;
-        }
-    }
-}

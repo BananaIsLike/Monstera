@@ -32,16 +32,3 @@
     width: 3px;
     background-color: $light-gray;
 }
-@media screen and (max-width: 1536px){
-    .merit{
-        &-container{
-            flex-direction: column;
-        }
-        &-line{
-            display: none;
-        }
-        &-item{
-            max-width: 450px;
-        }
-    }
-}

@@ -1,0 +1,64 @@
+@media screen and (max-width: 769px){
+    .header{
+        height: 500px;
+        .logo-box{
+            display: none;
+        }
+        &-bottom{
+            display: none;
+        }
+        &-feature{
+            display: none;
+        }
+    }
+    .merit{
+        margin-top: -30px;
+        &-container{
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: transparent;
+            box-shadow: none;
+        }
+        &-item{
+            max-width: 48%;
+            background-color: #fff;
+            box-shadow: $shadow;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+            align-self: stretch;
+        }
+        &-line{
+            display: none;
+        }
+    }
+    .new{
+        &-wrap{
+            margin-left: 10px;
+            justify-content: center;
+
+        }
+        &-item{
+            width: 228px;
+            margin-right: 10px;
+        }
+        &-price{
+            font-size: 12px;
+        }
+        &-img{
+            height: 180px;
+        }
+    }
+    .footer{
+        &-main{
+            justify-content: center;
+        }
+        &-subs{
+            display: none;
+        }
+        &-to-top{
+            right: 30px;
+        }
+    }
+}

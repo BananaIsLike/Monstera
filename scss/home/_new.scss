@@ -2,7 +2,7 @@
 .new-wrap{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 0;
     margin-right: 60px;
@@ -114,18 +114,7 @@
     font-size: 15px;
     font-weight: 600;
 }
-@media screen and (max-width: 1536px){
-    .new{
-        &-wrap{
-            margin-right: 20px;
-            margin-bottom: 40px;
-        }
-        &-item{
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-    }
-}
+
 
 
 

@@ -130,7 +130,7 @@ body {
 }
 .new:hover .main-title h2::before, .shop:hover .main-title h2::before, .campain:hover .main-title h2::before, .fashion:hover .main-title h2::before, .product:hover .main-title h2::before, .plant:hover .main-title h2::before,
 .coffee:hover .main-title h2::before {
-  width: 100%;
+  width: 90%;
 }
 
 .orange-btn {
@@ -513,21 +513,6 @@ body {
   fill: #78ffc0;
 }
 
-@media screen and (max-width: 1536px) {
-  .header {
-    height: 45vh;
-  }
-  .header-bottom-content {
-    display: none;
-  }
-  .header .sns-list {
-    margin: 0 auto;
-    display: none;
-  }
-  .header-future {
-    display: none;
-  }
-}
 .global-main {
   padding: 30px 35px;
   background: rgb(255, 255, 255);
@@ -768,21 +753,10 @@ body {
   background-color: #F5F5F5;
 }
 
-@media screen and (max-width: 1536px) {
-  .merit-container {
-    flex-direction: column;
-  }
-  .merit-line {
-    display: none;
-  }
-  .merit-item {
-    max-width: 450px;
-  }
-}
 .new-wrap {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 0;
   margin-right: 60px;
@@ -905,16 +879,6 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 1536px) {
-  .new-wrap {
-    margin-right: 20px;
-    margin-bottom: 40px;
-  }
-  .new-item {
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-}
 .best {
   margin: 180px 0 90px;
   background: url("../images/home/best-bg.jpg"), rgba(0, 0, 0, 0.25);
@@ -1239,73 +1203,60 @@ body {
   margin-left: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .header {
-    margin-bottom: 15px;
+    height: 500px;
   }
-  .header-item1 {
-    height: 250px;
-  }
-  .header-future {
+  .header .logo-box {
     display: none;
   }
-  .category {
-    margin-left: 20px;
+  .header-bottom {
+    display: none;
   }
-  .category-title {
-    margin-right: 20px;
-    font-size: 16px;
+  .header-feature {
+    display: none;
   }
-  .category-item {
-    margin-right: 20px;
-    padding: 6px 15px;
-    font-size: 14px;
+  .merit {
+    margin-top: -30px;
+  }
+  .merit-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: transparent;
+    box-shadow: none;
+  }
+  .merit-item {
+    max-width: 48%;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    align-self: stretch;
+  }
+  .merit-line {
+    display: none;
+  }
+  .new-wrap {
+    margin-left: 10px;
+    justify-content: center;
+  }
+  .new-item {
+    width: 228px;
+    margin-right: 10px;
+  }
+  .new-price {
+    font-size: 12px;
+  }
+  .new-img {
+    height: 180px;
   }
   .footer-main {
     justify-content: center;
   }
   .footer-subs {
     display: none;
-  }
-  .coffee-container {
-    margin-left: 15px;
-  }
-  .coffee:nth-child(n+2) {
-    margin-bottom: -30px;
-  }
-  .coffee-content {
-    padding: 14px;
-  }
-  .coffee-item-title {
-    font-size: 16px;
-    margin-bottom: 4px;
-  }
-  .coffee-item {
-    max-width: 192px;
-    margin-right: 15px;
-  }
-  .coffee-desc {
-    font-size: 12px;
-    margin-bottom: 8px;
-    line-height: 1.4;
-  }
-  .coffee-price {
-    font-size: 12px;
-  }
-  .coffee .orange-btn {
-    padding: 2px 8px;
-    width: 88px;
-  }
-  .coffee .orange-add {
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .coffee .orange-cart {
-    display: none;
-    visibility: hidden;
-  }
-  .coffee .main-title {
-    margin-bottom: 40px;
   }
   .footer-to-top {
     right: 30px;
