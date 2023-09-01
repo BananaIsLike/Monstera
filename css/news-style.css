@@ -110,6 +110,7 @@ body {
 .main-title h2 {
   display: inline-block;
   position: relative;
+  white-space: nowrap;
 }
 .main-title h2:before {
   content: "";
@@ -123,24 +124,48 @@ body {
   transition: 0.2s;
 }
 
-.new, .shop, .campain {
-  margin-bottom: 90px;
+.new, .shop, .campain, .fashion, .product, .plant,
+.coffee {
+  margin-bottom: 80px;
 }
-.new:hover .main-title h2::before, .shop:hover .main-title h2::before, .campain:hover .main-title h2::before {
+.new:hover .main-title h2::before, .shop:hover .main-title h2::before, .campain:hover .main-title h2::before, .fashion:hover .main-title h2::before, .product:hover .main-title h2::before, .plant:hover .main-title h2::before,
+.coffee:hover .main-title h2::before {
   width: 100%;
 }
 
-@media screen and (max-width: 1536px) {
-  .best {
-    display: none;
-  }
-  .new, .shop, .campain {
-    margin-bottom: 60px;
-  }
-  .new:hover .main-title h2::before, .shop:hover .main-title h2::before, .campain:hover .main-title h2::before {
-    width: 100%;
-  }
+.orange-btn {
+  background: linear-gradient(145deg, #FF8A00 0%, #FFAF52 100%);
+  padding: 5px 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  position: relative;
+  width: 126px;
+  white-space: nowrap;
+  transition: 0.2s;
 }
+.orange-btn:hover {
+  width: 154px;
+}
+.orange-btn:hover .orange-cart {
+  display: block;
+}
+.orange-cart {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.sns-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .header-dark {
   position: absolute;
   width: 100vw;
@@ -157,7 +182,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #F5F5F5;
 }
 .header-top {
   width: 100%;
@@ -185,7 +210,7 @@ body {
   display: none;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #F5F5F5;
   padding: 10px 20px 0px 20px;
   right: 0;
   border-radius: 10px 10px 10px 10px;
@@ -452,11 +477,6 @@ body {
   fill: #238759;
 }
 
-@media screen and (max-width: 1536px) {
-  .header-future {
-    display: none;
-  }
-}
 .global-main {
   padding: 30px 35px;
   background: rgb(255, 255, 255);
@@ -695,7 +715,7 @@ body {
 }
 .header-input {
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #F5F5F5;
   padding: 12px 25px;
   border-radius: 5px;
   width: 425px;
@@ -747,11 +767,11 @@ body {
   font-weight: 600;
   padding: 8px 30px;
   border-radius: 100px;
-  background: rgba(0, 0, 0, 0.1);
+  background: #F5F5F5;
   letter-spacing: 1.4px;
 }
 .anker-item:hover .anker-item {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .anker-item a {
   color: #000;
@@ -911,15 +931,84 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 1536px) {
+.sns-list {
+  display: flex;
+  align-items: center;
+}
+.sns-list a {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 15px;
+  }
+  .header-item1 {
+    height: 250px;
+  }
+  .header-future {
+    display: none;
+  }
+  .category {
+    margin-left: 20px;
+  }
+  .category-title {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  .category-item {
+    margin-right: 20px;
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+  .footer-main {
+    justify-content: center;
+  }
   .footer-subs {
     display: none;
   }
-  .footer-content {
-    margin: 0 auto;
+  .coffee-container {
+    margin-left: 15px;
+  }
+  .coffee:nth-child(n+2) {
+    margin-bottom: -30px;
+  }
+  .coffee-content {
+    padding: 14px;
+  }
+  .coffee-item-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .coffee-item {
+    max-width: 192px;
+    margin-right: 15px;
+  }
+  .coffee-desc {
+    font-size: 12px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  .coffee-price {
+    font-size: 12px;
+  }
+  .coffee .orange-btn {
+    padding: 2px 8px;
+    width: 88px;
+  }
+  .coffee .orange-add {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .coffee .orange-cart {
+    display: none;
+    visibility: hidden;
+  }
+  .coffee .main-title {
+    margin-bottom: 40px;
   }
   .footer-to-top {
-    right: 20px;
+    right: 30px;
   }
 }
 
