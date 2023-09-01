@@ -1,0 +1,36 @@
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+    &-title{
+        margin-right: 32px;
+        color: $light-green;
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+    }
+    &-item{
+        margin-right: 32px;
+        padding: 6px 25px;
+        background-color: $light-gray;
+        border-radius: 100px;
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+        white-space: nowrap;
+        &:nth-child(4){
+            letter-spacing: 2px;
+        }
+        &:hover{
+            background: $background-gray;
+        }
+        a{
+            color: black;
+        }
+    }
+}

@@ -51,6 +51,7 @@ body{
     h2{
         display: inline-block;
         position: relative;
+        white-space: nowrap;
     }
     h2:before{
         content: "";
@@ -64,8 +65,9 @@ body{
         transition: .2s;
     }
 }
-.new, .shop, .campain{
-    margin-bottom: 90px;
+.new, .shop, .campain, .fashion, .product, .plant
+, .coffee{
+    margin-bottom: 80px;
     &:hover{
         .main-title{
             h2::before{
@@ -74,18 +76,37 @@ body{
         }
     }
 }
-@media screen and (max-width: 1536px){
-    .best{
-        display: none;
-    }
-    .new, .shop, .campain{
-        margin-bottom: 60px;
+
+.orange{
+    &-btn{
+        background: $orange-gradient;
+        padding: 5px 15px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        position: relative;
+        width: 126px;
+        white-space: nowrap;
+        transition: .2s;
         &:hover{
-            .main-title{
-                h2::before{
-                    width: 100%;
-                }
+            width: 154px;
+            .orange-cart{
+                display: block;
             }
         }
     }
+    &-cart{
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+    }
+}
+.sns-list{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
